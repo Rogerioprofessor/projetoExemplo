@@ -62,6 +62,7 @@
                   <option>...</option>
                 </select>
               </div>
+              
               <div class="form-group col-md-2">
                 <label for="inputCEP">CEP</label>
                 <input type="text" class="form-control" id="inputCEP">

@@ -15,7 +15,7 @@
     </head>
      
     <body>
-     <div class="container mt-5 col-md-6">
+     <div class="container mt-5 ml-20 col-md-6">
         <div class="bg-white border border-rounded">
 
           <div id="box">

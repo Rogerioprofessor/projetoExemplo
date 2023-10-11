@@ -10,8 +10,6 @@
 		
 		<link rel="stylesheet" type="text/css" href="css/stylemain.css">
 		
-		
-
 		<!-- script -->
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		
@@ -34,19 +32,37 @@
 		            <ul id="menu-content" class="menu-content collapse out">
 		                		                
 		                <li  data-toggle="collapse" data-target="#cadastro" class="collapsed">
-		                    <a href="#"><i class="fa fa-life-ring sidebar-icon"></i> Cadastro <span class="arrow"><i class="fa fa-angle-down"></i></spam></a>
+							
+		                    <a href="#"><i class="fa fa-id-card" aria-hidden="true"></i> Cadastro <span class="arrow"><i class="fa fa-angle-down"></i></spam></a>
 		                </li>
 						
 		                <ul class="sub-menu collapse" id="cadastro">
 
-		                    <li><a href="#" id="formulario"><i class="fa fa-angle-right"></i>Cliente</a></li>
+		                    <li><a href="#" id="cliente"><i class="fa fa-angle-right"></i>Cliente</a></li>
 
-							<li><a href="#" id="form"><i class="fa fa-angle-right"></i>Vendedor</a></li>
+							<li><a href="#" id="vendedor"><i class="fa fa-angle-right"></i>Vendedor</a></li>
 		                    
 		                </ul>
 
+						<!--Menu relatórios-->
+
+						<li  data-toggle="collapse" data-target="#relatorio" class="collapsed">
+		                    <a href="#"><i class="fa fa-print" aria-hidden="true"></i>Relatórios <span class="arrow"><i class="fa fa-angle-down"></i></spam></a>
+		                </li>
+						
+		                <ul class="sub-menu collapse" id="relatorio">
+
+		                    <li><a href="#" id="relcliente"><i class="fa fa-angle-right"></i>Cliente</a></li>
+
+							<li><a href="#" id="relvendedor"><i class="fa fa-angle-right"></i>Vendedor</a></li>
+		                    
+		                </ul>
+
+						<!--Fim do menu relatórios-->
+
+
 						<li  data-toggle="collapse" data-target="#configuracoes" class="collapsed">
-		                    <a href="#"><i class="fa fa-life-ring sidebar-icon"></i> Configuracoes <span class="arrow"><i class="fa fa-angle-down"></i></spam></a>
+		                    <a href="#"><i class="fa fa-cogs" aria-hidden="true"></i> Configuracoes <span class="arrow"><i class="fa fa-angle-down"></i></spam></a>
 		                </li>
 
 						<ul class="sub-menu collapse" id="configuracoes">
