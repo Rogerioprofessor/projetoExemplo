@@ -60,8 +60,8 @@
 									<td><?php echo $email ?></td>
 									<td><?php echo $telefone ?></td>
 									
-									<td align="center"><a href="editarcliente.php?id=<?php echo $reg_cadastro["idcliente"]?>" class="btn btn-success">Alterar</a>
-									<td align="center"><a href="#" class="btn btn-danger" onclick = "apagar('<?php echo $reg_cadastro["idcliente"]?>');">Excluir</td>
+									<td align="center"><a href="editarcliente.php?id=<?php echo $reg_cadastro["id_cliente"]?>" id="editar" class="btn btn-success">Alterar</a>
+									<td align="center"><a href="#" class="btn btn-danger" onclick = "apagar('<?php echo $reg_cadastro["id_cliente"]?>');">Excluir</td>
 								</tr>
 
 							<?php
