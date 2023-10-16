@@ -29,6 +29,10 @@
         <main class="container mt-5">
         <form action ="alterar_cliente.php" method="post" onSubmit="return validaCampo();">
             <div class="form-row">
+            <div class="form-group col-md-12">
+                <input type="hidden"  class="form-control" id="id_cliente" name="id_cliente" value="<?php echo $resultado["id_cliente"];?>"/> 
+             </div>
+
               <div class="form-group col-md-6">
                 <label for="nm_cliente">Nome</label>
                 <input type="text"  class="form-control" id="nm_nome" name="nm_cliente" value="<?php echo $resultado["nm_cliente"];?>"/> 

@@ -2,20 +2,21 @@
 <html lang="pt-br">
 	<head>		
 		<meta charset="utf-8">
-		<title>Consulta de alunos</title>	
+		<title>Consulta de clientes</title>	
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
         <meta charset="utf-8">
         
-        <!-- adicionar CSS Bootstrap -->
+        <!-- adicionar CSS Bootstrap >-->
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
         
-        <!-- css personalizado -->
+        <!-- css personalizado >-->
         <link href="css/estilo.css" rel="stylesheet" media="screen">
 		
+		<script src="js/script.js"></script>
 		<script>
 			function apagar(id){				
 				if(window.confirm("Confirma a exclusão ? ")){
-					window.location = "excluir_aluno.php?id=" + id;
+					window.location = "excluir_cliente.php?id=" + id;
 				}				
 			}		
 		</script>		
@@ -60,7 +61,7 @@
 									<td><?php echo $email ?></td>
 									<td><?php echo $telefone ?></td>
 									
-									<td align="center"><a href="editarcliente.php?id=<?php echo $reg_cadastro["id_cliente"]?>" id="editar" class="btn btn-success">Alterar</a>
+									<td align="center"><a href="editarCliente.php?id=<?php echo $reg_cadastro["id_cliente"]?>" class="btn btn-success">Alterar</a>
 									<td align="center"><a href="#" class="btn btn-danger" onclick = "apagar('<?php echo $reg_cadastro["id_cliente"]?>');">Excluir</td>
 								</tr>
 
@@ -78,8 +79,8 @@
 	<div class='col-xs-offset-1'>
 		<a href="menu.php" class="btn btn-info">Voltar</a>
 	</div>
-	</body>
-</html>	
+  </body>
+</html>
 
 
 

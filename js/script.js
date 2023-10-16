@@ -1,7 +1,6 @@
 $(document).ready(() => {
 		
 	$('#cliente').on('click', () => {
-		console.log('Sucesso');
 		$.post('cliente.php', data => { 
 			$('#pagina').html(data)
 		})
@@ -13,6 +12,7 @@ $(document).ready(() => {
 		})
 	})
 
+	
 	//Chamada de relatórios
 
 	//Relatório de cliente
@@ -29,8 +29,6 @@ $(document).ready(() => {
 			$('#pagina').html(data)
 		})
 	})
-
-	
 	
 })
 
