@@ -13,6 +13,7 @@
         <link href="css/estilo.css" rel="stylesheet" media="screen">
 		
 		<script src="js/script.js"></script>
+
 		<script>
 			function apagar(id){				
 				if(window.confirm("Confirma a exclusão ? ")){
@@ -24,6 +25,9 @@
 	<?php
 		require 'conexao.php';	
 		$sql = 'select * from tb_cliente';
+		/*
+		  mysqli_query - É a função que irá retornar o resultado da script SQL por meio da variável.
+		*/
 		$query = mysqli_query($con,$sql);
 	?>		
 	<body>
@@ -42,6 +46,9 @@
 							</thead>
 							<?php
 								$contlin = 2;
+								/*
+								 mysqli_fetch_array - Retorna o campo, a posição do array
+								*/
 								while($reg_cadastro=mysqli_fetch_array($query))
 								{
 									$cliente=$reg_cadastro["nm_cliente"];
@@ -76,8 +83,8 @@
 	</div>			
 	
 	<!--<div class="col-xs-offset-4 col-xs-10">-->
-	<div class='col-xs-offset-1'>
-		<a href="menu.php" class="btn btn-info">Voltar</a>
+	<div class='col-lg-offset-10'>
+		<a href="main.html" class="btn btn-info">Voltar</a>
 	</div>
   </body>
 </html>

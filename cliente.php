@@ -11,9 +11,6 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
 
-   
-
-
     </style>
     
     <body>
@@ -56,7 +53,7 @@
                 <input type="text"  class="form-control" id="nr_telefone" name="nr_telefone"  placeholder="Nr de telefone" onkeypress="limpa();">
               </div>            
               
-              <button type="submit" class="btn btn-primary">Enviar</button>
+              <button type="submit" class="btn btn-primary">Salvar</button>
            </div> 
           </form>
           <div id="erro">

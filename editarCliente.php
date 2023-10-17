@@ -14,12 +14,24 @@
 
     <?php
 			include 'conexao.php';
+      /*
+       isset - Retorna verdadeiro se tem valor no ID
+      */
 			if(isset($_GET["id"])){
+        /*
+         is_numeric - É a função que retorna se o valor é numérico.
+        */
 			   if(is_numeric($_GET["id"])){
 					$id = $_GET["id"];
-					$sql = "select * from tb_cliente where id_cliente = ".$_GET["id"];
+					$sql = "SELECT * FROM tb_cliente WHERE id_cliente = ".$_GET["id"];
+          /*          
+		        mysqli_query - É a função que irá retornar o resultado da script SQL por meio da variável.
+		      */          
 					$executa=mysqli_query($con,$sql);
-					$resultado=mysqli_fetch_array($executa);
+           /*
+						 mysqli_fetch_array - Retorna o campo, a posição do array
+					*/
+          $resultado=mysqli_fetch_array($executa);
 				}
 			}			
 		?>
@@ -30,12 +42,12 @@
         <form action ="alterar_cliente.php" method="post" onSubmit="return validaCampo();">
             <div class="form-row">
             <div class="form-group col-md-12">
-                <input type="hidden"  class="form-control" id="id_cliente" name="id_cliente" value="<?php echo $resultado["id_cliente"];?>"/> 
+                <input type="hidden" class="form-control" id="id_cliente" name="id_cliente" value="<?php echo $resultado["id_cliente"];?>"/> 
              </div>
 
               <div class="form-group col-md-6">
                 <label for="nm_cliente">Nome</label>
-                <input type="text"  class="form-control" id="nm_nome" name="nm_cliente" value="<?php echo $resultado["nm_cliente"];?>"/> 
+                <input type="text" class="form-control" id="nm_nome" name="nm_cliente" value="<?php echo $resultado["nm_cliente"];?>"/> 
               </div>
 
               <div class="form-group col-md-6">
